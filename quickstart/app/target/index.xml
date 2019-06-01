@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="app" increment="1559409383462">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="app" increment="1559413845141">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.enroute.examples.quickstart.impl"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.201906011716" type="Version"/>
+      <attribute name="version" value="1.0.0.201906011830" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.201906011716" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201906011830" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.osgi.enroute.examples.quickstart.impl"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.201906011716" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201906011830" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.osgi.enroute.examples.quickstart.impl"/>
     </capability>
     <capability namespace="osgi.service">
       <attribute name="objectClass" value="org.osgi.enroute.examples.quickstart.rest.Upper" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="6026" type="Long"/>
+      <attribute name="size" value="6025" type="Long"/>
       <attribute name="url" value="file:/C:/Users/edmoe/eclipse-workspace/quickstart/impl/target/impl-1.0-SNAPSHOT.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="A27ED6D79A1D3504D7756E9DC13BA4DFFDC433D1884F69BC03DDDC7530359856"/>
+      <attribute name="osgi.content" value="B4FEA2668CE51ECCCA29719A3ACC6AF1A99B0D711B544F5E33B4E79222230905"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs))"/>
@@ -4355,21 +4355,21 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.enroute.examples.quickstart.app"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.0.201906011716" type="Version"/>
+      <attribute name="version" value="1.0.0.201906011830" type="Version"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.0.201906011716" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201906011830" type="Version"/>
       <attribute name="osgi.wiring.bundle" value="org.osgi.enroute.examples.quickstart.app"/>
     </capability>
     <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.0.201906011716" type="Version"/>
+      <attribute name="bundle-version" value="1.0.0.201906011830" type="Version"/>
       <attribute name="osgi.wiring.host" value="org.osgi.enroute.examples.quickstart.app"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="3912" type="Long"/>
+      <attribute name="size" value="3907" type="Long"/>
       <attribute name="url" value="file:/C:/Users/edmoe/eclipse-workspace/quickstart/app/target/app-1.0-SNAPSHOT.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="21B157170C3C1DBDBF3BD279E771E40F70C951FA501A5ACB24075D2A7BE8CA86"/>
+      <attribute name="osgi.content" value="2D31A189E313DA0022CF7CEBDEA3706A0BFFECEF3CDB2B6C740D0B0C10BD1188"/>
     </capability>
     <requirement namespace="osgi.extender">
       <directive name="filter" value="(&amp;(osgi.extender=osgi.configurator)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
