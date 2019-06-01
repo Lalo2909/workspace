@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1559409382124
+Bundle-ManifestVersion: 2
+Bundle-Name: app
+Bundle-SymbolicName: org.osgi.enroute.examples.quickstart.app
+Bundle-Version: 1.0.0.201906011716
+Created-By: 1.8.0_191 (Oracle Corporation)
+Private-Package: config
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.confi
+ gurator)(version>=1.0.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osg
+ i.ee=JavaSE)(version=1.8))"
+Tool: Bnd-4.1.0.201810181252
+
