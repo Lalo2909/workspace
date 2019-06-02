@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.osgi.enroute.examples.microservice.dao.impl.AddressDaoImpl" activate="activate">
+  <service>
+    <provide interface="org.osgi.enroute.examples.microservice.dao.AddressDao"/>
+  </service>
+  <reference name="provider" interface="org.osgi.service.transaction.control.jdbc.JDBCConnectionProvider" field="jdbcConnectionProvider"/>
+  <reference name="transactionControl" interface="org.osgi.service.transaction.control.TransactionControl" field="transactionControl"/>
+  <implementation class="org.osgi.enroute.examples.microservice.dao.impl.AddressDaoImpl"/>
+</scr:component>

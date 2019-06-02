@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1559430055249
+Bundle-ManifestVersion: 2
+Bundle-Name: rest-service
+Bundle-SymbolicName: org.osgi.enroute.examples.microservice.rest-servi
+ ce
+Bundle-Version: 0.0.1.201906012300
+Created-By: 1.8.0_191 (Oracle Corporation)
+Import-Package: javax.json;version="[1.1,2)",javax.ws.rs,javax.ws.rs.c
+ ore,javax.ws.rs.ext,org.osgi.enroute.examples.microservice.dao;versio
+ n="[1.0,2)",org.osgi.enroute.examples.microservice.dao.dto;version="[
+ 1.0,2)",org.osgi.util.converter;version="[1.0,2)"
+Private-Package: org.osgi.enroute.examples.microservice.rest,static.cs
+ s,static,static.main.css,static.main.html,static.main.img
+Provide-Capability: osgi.service;objectClass:List<String>="javax.ws.rs
+ .ext.MessageBodyReader,javax.ws.rs.ext.MessageBodyWriter",osgi.servic
+ e;objectClass:List<String>="org.osgi.enroute.examples.microservice.re
+ st.RestComponentImpl"
+Require-Capability: osgi.service;filter:="(objectClass=org.osgi.enrout
+ e.examples.microservice.dao.PersonDao)";effective:=active,osgi.extend
+ er;filter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(versio
+ n>=2.0.0)))",osgi.implementation;filter:="(&(osgi.implementation=osgi
+ .http)(version>=1.1.0)(!(version>=2.0.0)))",osgi.implementation;filte
+ r:="(&(osgi.implementation=osgi.jaxrs)(version>=1.0.0)(!(version>=2.0
+ .0)))",osgi.service;filter:="(osgi.jaxrs.media.type=application/json)
+ ";resolution:=optional;effective:=active,osgi.contract;osgi.contract=
+ JavaJAXRS;filter:="(&(osgi.contract=JavaJAXRS)(version=2.1.0))",osgi.
+ ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.osgi.enroute.examples.microservice.res
+ t.JsonpConvertingPlugin.xml,OSGI-INF/org.osgi.enroute.examples.micros
+ ervice.rest.RestComponentImpl.xml
+Tool: Bnd-4.1.0.201810181252
+

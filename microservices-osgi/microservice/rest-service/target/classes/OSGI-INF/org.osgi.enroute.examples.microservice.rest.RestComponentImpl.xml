@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.osgi.enroute.examples.microservice.rest.RestComponentImpl">
+  <property name="osgi.http.whiteboard.resource.prefix" type="String" value="static"/>
+  <property name="osgi.jaxrs.extension.select" type="String" value="(osgi.jaxrs.media.type=application/json)"/>
+  <property name="osgi.jaxrs.resource" type="Boolean" value="true"/>
+  <property name="osgi.http.whiteboard.resource.pattern" type="String">/microservice/*</property>
+  <service>
+    <provide interface="org.osgi.enroute.examples.microservice.rest.RestComponentImpl"/>
+  </service>
+  <reference name="personDao" interface="org.osgi.enroute.examples.microservice.dao.PersonDao" field="personDao"/>
+  <implementation class="org.osgi.enroute.examples.microservice.rest.RestComponentImpl"/>
+</scr:component>

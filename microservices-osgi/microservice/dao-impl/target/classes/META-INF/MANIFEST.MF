@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1559430052881
+Bundle-ManifestVersion: 2
+Bundle-Name: dao-impl
+Bundle-SymbolicName: org.osgi.enroute.examples.microservice.dao-impl
+Bundle-Version: 0.0.1.201906012300
+Created-By: 1.8.0_191 (Oracle Corporation)
+Import-Package: org.osgi.enroute.examples.microservice.dao;version="[1
+ .0,1.1)",org.osgi.enroute.examples.microservice.dao.dto;version="[1.0
+ ,2)",org.osgi.service.transaction.control;version="[1.0,2)",org.osgi.
+ service.transaction.control.jdbc;version="[1.0,2)",org.slf4j;version=
+ "[1.7,2)"
+Private-Package: org.osgi.enroute.examples.microservice.dao.impl
+Provide-Capability: osgi.service;objectClass:List<String>="org.osgi.en
+ route.examples.microservice.dao.AddressDao",osgi.service;objectClass:
+ List<String>="org.osgi.enroute.examples.microservice.dao.PersonDao"
+Require-Capability: osgi.service;filter:="(objectClass=org.osgi.enrout
+ e.examples.microservice.dao.AddressDao)";effective:=active,osgi.servi
+ ce;filter:="(objectClass=org.osgi.service.transaction.control.Transac
+ tionControl)";effective:=active,osgi.service;filter:="(objectClass=or
+ g.osgi.service.transaction.control.jdbc.JDBCConnectionProvider)";effe
+ ctive:=active,osgi.extender;filter:="(&(osgi.extender=osgi.component)
+ (version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Jav
+ aSE)(version=1.8))"
+Service-Component: OSGI-INF/org.osgi.enroute.examples.microservice.dao
+ .impl.AddressDaoImpl.xml,OSGI-INF/org.osgi.enroute.examples.microserv
+ ice.dao.impl.ComponentImpl.xml,OSGI-INF/org.osgi.enroute.examples.mic
+ roservice.dao.impl.PersonDaoImpl.xml
+Tool: Bnd-4.1.0.201810181252
+
